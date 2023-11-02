@@ -419,7 +419,10 @@ flex-shrink: 0;
 
 @media screen and (max-width:890px)
 {
-
+    body
+    {
+overflow: hidden;
+    }
     .tri{
         position: absolute;
         top: 57%;
@@ -453,6 +456,10 @@ flex-shrink: 0;
 
 @media screen and (max-width:500px)
 {
+    body
+    {
+overflow: hidden;
+    }
 .logo
 {
   width: 83px;  
@@ -663,6 +670,10 @@ right: 25%;
 
 @media screen and (width:414px)
 {
+    body
+    {
+overflow: hidden;
+    }
 header{
 position: absolute;
 top: 13%;
@@ -682,6 +693,10 @@ transform: translate(-50%, -50%);
 }
 @media screen and (max-width:320px)
 {
+    body
+    {
+overflow: hidden;
+    }
 .box1,.box2,.box3
 {
 gap: 40px;
@@ -695,6 +710,7 @@ transform: translate(-50%, -50%);
 display: none;
 width: 43.75rem;
 flex-shrink: 0;
+
 }  
 
 #Result,#Result2,#Result3
