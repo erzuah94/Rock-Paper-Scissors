@@ -597,6 +597,7 @@ display: none;
 width: 99%;
 flex-shrink: 0;
 
+
 }
 #Mychoice
 {
@@ -689,7 +690,7 @@ flex-shrink: 0;
 {
   margin: auto; 
   position: relative; 
-  margin-top: 20%;
+  margin-top: 25%;
 }
 .close
 {
@@ -743,7 +744,7 @@ top: 38%;
 left:50%;
 transform: translate(-50%, -50%); 
 display: none;
-width: 43.75rem;
+width: 98%;
 flex-shrink: 0;
 
 }  
@@ -761,7 +762,9 @@ width: 13.75rem;
 height: 3rem;
 flex-shrink: 0;
 position: relative;
-left: 27%;
+/* transform: translate(-50%, -50%);  */
+top: 130%; 
+ left: -10%;
 }
 .mid
 {
@@ -774,19 +777,19 @@ transform: translate(-50%, -50%);
 {
 position: relative;
 top: 45%;
-left:28%;
+left:-4%;
 }
 #Aichoice1,#Aichoice2,#Aichoice3
 {
 width: 8.125rem;
 height: 8.3125rem;   
 position: relative; 
-right: 28%;
+right: -3%;
 }
 .yp
 {
  position: absolute;  
- left: 33%; 
+ left: 6%; 
  top: 90%;
 
 }
@@ -857,6 +860,26 @@ flex-shrink: 0;
   margin: auto; 
   position: relative; 
   margin-top: 10%;
+}
+.logo2
+{
+position: relative;
+left: -30px;
+width: 6.4rem;
+height: 6.4rem;
+}
+.logo3{
+    width: 6.4rem;
+    height: 6.4rem;   
+    position: relative;
+left: 13px;
+}
+.logo1
+{
+width: 6.4rem;
+height: 6.4rem;
+position: relative;
+left: 20px;
 }
 }
     
