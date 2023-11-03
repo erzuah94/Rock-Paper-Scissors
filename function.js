@@ -170,7 +170,7 @@ rOck.addEventListener('click', () =>{
        else if(rOck > 2 && rOck < 4){
 
                 Aichoice.src="img/hand2.svg";
-                result3.innerHTML ="Win";
+                result3.innerHTML ="You Win";
                 wincount++; // Increment the win count when the player wins
                 win.innerHTML = wincount;
 
