@@ -67,6 +67,9 @@ position: absolute;
 top: 60%;
 left:50%;
 transform: translate(-50%, -50%); 
+ width: 15.875rem;
+height: 14.9375rem;
+flex-shrink: 0; 
 }
 
 button{
@@ -75,12 +78,28 @@ button{
     border: none;
     transition: 0.1s;
 }
+#tag button:hover
+{
+background-image:url(Oval\ Copy\ 6.svg);
+background-repeat: no-repeat;
+background-size: cover;
+width: 14.75rem;
+height: 14.5rem;
+flex-shrink: 0;
+}
+.Logo2,.Logo1,.Logo3{
+ width: 11.375rem;
+height: 11.6875rem;
+flex-shrink: 0;
+
+}
 
 #rock{
     position: absolute; 
     top: 70%;
     left: 50%;   
     transform: translate(-50%, -50%); 
+    margin-top: -30px;
 }
 
 .both{
@@ -519,6 +538,12 @@ height: 8.3125rem;
 flex-shrink: 0;
 top: 64%;
 }
+#rock{
+    position: absolute; 
+    top: 67.5%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    }
 .logo3
 {
 display: block;
