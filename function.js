@@ -16,6 +16,14 @@ const result = document.getElementById("Result");
 const result2 = document.getElementById("Result2");
 const result3 = document.getElementById("Result3");
 const Mid = document.querySelector(".mid");
+/*display*/
+
+const oval = document.getElementById("oval");
+const oval2 = document.getElementById("oval2");
+const oval3 = document.getElementById("oval3");
+const oval4 = document.getElementById("oval4");
+const oval5 = document.getElementById("oval5");
+const oval6 = document.getElementById("oval6");
 /*Popup*/
 // let winCount = 0;
 let wincount = 0; 
@@ -51,64 +59,69 @@ Playagain3.addEventListener("click",function()
     // document.querySelector(".Home3").style.display = "none";
 
 })
-
 /*first Btn*/
 // let Wincount= 0;
-   hAnd.addEventListener('click', () =>{
-   
+hAnd.addEventListener('click', () =>{
+    
     document.querySelector(".box1").style.display = "block";
     document.getElementById("tag").style.display = "none";
-
+    
+    
     const Aichoice = document.getElementById("Aichoice1");  
-
+    
     let Hand = Math.ceil(Math.random()*3);
-   
+    
     if (Hand > 0 && Hand < 2){
-        Aichoice.src = "img/rock.svg"
+        Aichoice.src = "img/rock.svg";
         result.innerHTML ="You Win";
         wincount++; // Increment the win count when the player wins
         win.innerHTML = wincount;
+        oval2.style.display="none";
+
+        setTimeout(function(){
+       oval.style.display= "flex";
+        },1000);
         // console.log('hand')
         //  console.log(' You Win');;
-      }
+    }
  else if(Hand > 1 && Hand < 3){
   
     Aichoice.src="img/hand.svg";
     result.innerHTML ="Tie";
-
+    oval.style.display= "none";
+    oval2.style.display="none";
 }
   else if(Hand > 2 && Hand < 4){
  
     Aichoice.src="img/hand2.svg";
     result.innerHTML ="You Lose";
+
+    setTimeout(function(){
+    oval2.style.display="flex";
+    },1000)
+    oval.style.display="none";
+   
     if(wincount > 0){
 
         wincount--; // Increment the loss count when the player loses
         win.textContent = wincount;
     }
     }
+
+  
       
  });
 
-    // result.innerHTML = "You Win!" ;
-// }
-// else if(Aichoice.src === "img/hand1.svg")
-// {
-//     console.log('Draw ');
-// }
-// else if(Aichoice ===  "img/hand2.svg")
-// {
-//     console.log('Lose');
-//     }
-
-
-/*Second Btn*/
-hAnd2.addEventListener('click', () =>{
-    // const win = document.getElementById("num");
-    
-    document.querySelector(".box2").style.display = "block";
+ 
+ 
+ /*Second Btn*/
+ hAnd2.addEventListener('click', () =>{
+     // const win = document.getElementById("num");
+    //  const oval = document.getElementById("oval");
+    //  const oval2 = document.getElementById("oval2");
+     document.querySelector(".box2").style.display = "block";
     document.getElementById("tag").style.display = "none";
-
+    
     const Aichoice = document.getElementById("Aichoice2"); 
     
     let Hand2 = Math.ceil(Math.random()*3);
@@ -117,36 +130,48 @@ hAnd2.addEventListener('click', () =>{
         Aichoice.src="img/rock.svg";
         //   ai = 'Rock';
         result2.innerHTML ="You Lose";
+
+        setTimeout(function(){
+            oval4.style.display="flex";
+        },1000)
+        oval3.style.display="none";
         if(wincount > 0){
-         wincount--; // Increment the loss count when the player loses
+            wincount--; // Increment the loss count when the player loses
             win.textContent = wincount;
+        }
     }
-}
     else if(Hand2 > 1 && Hand2 <3){
         result2.innerHTML ="You Win";
         wincount++; // Increment the win count when the player wins
         win.innerHTML = wincount;
         Aichoice.src="img/hand.svg";
+        oval4.style.display="none";
+        
+        setTimeout(function(){
+            oval3.style.display= "flex";
+        },1000);
         // ai = 'Paper';
     }
     else if(Hand2 >= 2 && Hand2 < 4){
         result2.innerHTML ="Tie";
         Aichoice.src="img/hand2.svg";
+        oval3.style.display= "none";
+        oval4.style.display="none";
         // ai = 'Scissors';
     }
-  })
+})
 
-     
+
 /*third Btn*/
 
 rOck.addEventListener('click', () =>{
-  
+    
     document.querySelector(".box3").style.display = "block";
     document.getElementById("tag").style.display = "none";
-
-
- 
-   
+    
+    
+    
+    
     const Aichoice = document.getElementById("Aichoice3"); 
 
     let rOck = Math.ceil(Math.random()*3);
@@ -156,27 +181,41 @@ rOck.addEventListener('click', () =>{
     {
         Aichoice.src="img/rock.svg";
         result3.innerHTML ="Tie";
+        oval5.style.display= "none";
+        oval6.style.display="none";
         // Playagain3.style.display="block";
     }
-        else if(rOck > 1 && rOck <3){
-          Aichoice.src="img/hand.svg";
-            result3.innerHTML ="You Lose";
-            // Playagain3.style.display="block";
-            if(wincount > 0){
-               wincount--; // Increment the loss count when the player loses
-                win.textContent = wincount;
-            }
-    }
-       else if(rOck > 2 && rOck < 4){
+    else if(rOck > 1 && rOck <3){
+        Aichoice.src="img/hand.svg";
+        result3.innerHTML ="You Lose";
 
-                Aichoice.src="img/hand2.svg";
-                result3.innerHTML ="You Win";
-                wincount++; // Increment the win count when the player wins
-                win.innerHTML = wincount;
-
+        setTimeout(function(){
+            oval6.style.display="flex";
+        },1000)
+        oval5.style.display="none";
+        // Playagain3.style.display="block";
+        if(wincount > 0){
+            wincount--; // Increment the loss count when the player loses
+            win.textContent = wincount;
         }
-        // console.log(ai);
-   })
+    }
+    else if(rOck > 2 && rOck < 4){
+        
+        Aichoice.src="img/hand2.svg";
+        result3.innerHTML ="You Win";
+        oval6.style.display="none";
+        
+        setTimeout(function(){
+            oval5.style.display= "flex";
+        },1000);
+
+        wincount++; // Increment the win count when the player wins
+        win.innerHTML = wincount;
+
+        
+    }
+    // console.log(ai);
+})
 
 
 
@@ -229,6 +268,16 @@ rOck.addEventListener('click', () =>{
 
 
 
+// result.innerHTML = "You Win!" ;
+// }
+// else if(Aichoice.src === "img/hand1.svg")
+// {
+//     console.log('Draw ');
+// }
+// else if(Aichoice ===  "img/hand2.svg")
+// {
+//     console.log('Lose');
+//     }
 
 
 

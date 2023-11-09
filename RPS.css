@@ -72,6 +72,7 @@ height: 14.9375rem;
 flex-shrink: 0; 
 }
 
+
 button{
     background: none; 
     cursor: pointer;
@@ -80,26 +81,21 @@ button{
 }
 #tag button:hover
 {
-background-image:url(Oval\ Copy\ 6.svg);
+background-image:url(Oval6.svg);
 background-repeat: no-repeat;
 background-size: cover;
 width: 14.75rem;
 height: 14.5rem;
 flex-shrink: 0;
 }
-.Logo2,.Logo1,.Logo3{
- width: 11.375rem;
-height: 11.6875rem;
-flex-shrink: 0;
 
-}
 
 #rock{
     position: absolute; 
     top: 70%;
     left: 50%;   
     transform: translate(-50%, -50%); 
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 
 .both{
@@ -338,6 +334,39 @@ display: none;
 {
     display: none;
 }
+#oval,#oval3,#oval5
+{
+ width: 16.875rem;
+height: 16.875rem;
+flex-shrink: 0;
+border-radius: 45.625rem;
+opacity: 0.05;
+background: #FFF;
+position: absolute;
+right: 63.5%;
+z-index: -1;
+top: 20%;  
+display: none;
+/* border: 1px solid;
+border-radius: 45.625rem;
+opacity: 0.05;
+background: #FFF; */
+}
+#oval2,#oval4,#oval6
+{
+    width: 16.875rem;
+    height: 16.875rem;
+    flex-shrink: 0;
+    border-radius: 45.625rem;
+    opacity: 0.05;
+    background: #FFF;
+    position: absolute;
+    left: 64.3%;
+    z-index: -1;
+    top: 20%; 
+    display: none; 
+      
+}
 
 
 
@@ -349,6 +378,19 @@ top: 17%;
 left:40%;
 transform: translate(-50%, -50%); 
 } 
+.Logo2,.Logo1,.Logo3{
+    width: 11.375rem;
+   height: 11.6875rem;
+   flex-shrink: 0;
+   
+   }
+#rock{
+    position: absolute; 
+    top: 70%;
+    left: 50%;   
+    transform: translate(-50%, -50%); 
+    margin-top: -30px;
+}
 .container1
 {
 display: flex; 
@@ -430,13 +472,22 @@ flex-shrink: 0;
 .mid
 {
  position: relative;
- right: 3.6%;   
+ right: 2.0%;   
 }
 
 } 
+@media  (hover:none){
+ button#rock:hover{
+    background-color: initial;
+ }
+    
+ 
+}
 
-@media screen and (max-width:890px)
+
+@media  screen and (max-width:890px)
 {
+    
     body
     {
 overflow: hidden;
@@ -467,7 +518,13 @@ overflow: hidden;
     display: none;  
     } */
 
+    /* #tag button:hover
+    {
+   
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    } */
 
 
 }
@@ -478,6 +535,9 @@ overflow: hidden;
     {
 overflow: hidden;
     } */
+    button:hover{
+        background-color: initial;
+    }
 .logo
 {
   width: 83px;  
