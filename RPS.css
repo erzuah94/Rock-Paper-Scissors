@@ -53,6 +53,58 @@ font-weight: 600;
 line-height: 2;
 }
 
+#cross
+{
+position: absolute; 
+top: 57%;
+left: 38%;   
+transform: translate(-50%, -50%);  
+flex-shrink: 0;  
+}
+#cross .Cross
+{
+width: 8.0625rem;
+height: 8.25rem;    
+}
+#hand3
+{
+position: absolute;
+top: 55%;
+left: 62%;
+transform: translate(-50%, -50%);   
+} 
+#hand3 .Logo2{
+width: 8.0625rem;
+height: 8.25rem;
+}
+#lizard
+{
+    position: absolute; 
+    top: 80%;
+    left: 43%;   
+    transform: translate(-50%, -50%);  
+    flex-shrink: 0;
+}
+#lizard .Lizard
+{
+    width: 8.0625rem;
+    height: 8.25rem;   
+}
+
+
+#hand4
+{
+    position: absolute; 
+    top: 43%;
+    left: 50%;   
+    transform: translate(-50%, -50%);  
+    flex-shrink: 0;
+}
+#hand4 .Logo1{
+width: 8.0625rem;
+height: 8.25rem;
+}
+
 #num{
 position: relative;
 top:-15%;   
@@ -71,6 +123,14 @@ transform: translate(-50%, -50%);
 height: 14.9375rem;
 flex-shrink: 0; 
 }
+.tri1{
+position: absolute;
+top: 60%;
+left:50%;
+transform: translate(-50%, -50%); 
+width: 20.875rem;
+height: 20.9375rem;
+}
 
 
 button{
@@ -79,7 +139,7 @@ button{
     border: none;
     transition: 0.1s;
 }
-#tag button:hover
+/* #tag button:hover
 {
 background-image:url(Oval6.svg);
 background-repeat: no-repeat;
@@ -87,17 +147,46 @@ background-size: cover;
 width: 14.75rem;
 height: 14.5rem;
 flex-shrink: 0;
+} */
+
+#hand .Logo2
+{
+width: 11.375rem;
+height: 11.6875rem;
+flex-shrink: 0;   
 }
-
-
+#hand2 .Logo1
+{
+width: 11.375rem;
+height: 11.6875rem;
+flex-shrink: 0;
+}
 #rock{
     position: absolute; 
-    top: 70%;
+    top: 73%;
     left: 50%;   
     transform: translate(-50%, -50%); 
     /* margin-top: -30px; */
-}
 
+}
+#rock .Logo3
+{
+width: 11.375rem;
+height: 11.6875rem;
+flex-shrink: 0;
+}
+#rock1{
+position: absolute; 
+top: 80%;
+left: 57%;   
+transform: translate(-50%, -50%);  
+flex-shrink: 0;
+}
+#rock1 .Logo3
+{
+width: 8.0625rem;
+height: 8.25rem;
+}
 .both{
     display: flex;
     position: absolute;
@@ -106,10 +195,38 @@ flex-shrink: 0;
     transform: translate(-50%, -50%); 
     gap: 40px;
 }
-
+#Bonus
+{
+    width: 8rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-family: Barlow Semi Condensed;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.15625rem;
+    /* position: relative;
+    top:90%;
+    left: 7%; */
+    transition: 0.4s;   
+}
+.but
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    position: relative;
+    top: 85%;
+}
 
 #myRules{
-    float: right;
+    /* float: right; */
     width: 8rem;
     height: 2.5rem;
     flex-shrink: 0;
@@ -124,9 +241,34 @@ flex-shrink: 0;
     line-height: normal;
     letter-spacing: 0.15625rem;
     position: relative;
-    top:90%;
-    left: -7%;
+    top:80%;
+    left: -10%; 
     transition: 0.4s;
+
+
+    float: right; 
+
+}
+.myRules
+{
+float: right; 
+width: 8rem;   
+height: 2.5rem;
+flex-shrink: 0;
+border-radius: 0.5rem;
+border: 1px solid #FFF;
+color: #FFF;
+text-align: center;
+font-family: Barlow Semi Condensed;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.15625rem;
+position: relative;
+top:80%;
+left: -10%; 
+transition: 0.4s;  
 }
 
 #myRules:hover{
@@ -134,6 +276,16 @@ flex-shrink: 0;
     background: #fff;
 }
 
+.myRules:hover
+{
+color: #3B4262; 
+background: #fff;   
+}
+#Bonus:hover
+{
+    color: #3B4262; 
+    background: #fff;   
+}
 .popup
 {
 /* opacity: 0.5; */
@@ -142,8 +294,11 @@ width: 100%;
 height: 100%;
 flex-shrink: 0; 
 position: absolute;
+top: 0%;
 display: none; 
 justify-content: center;
+
+
 }
 .content
 {
@@ -176,7 +331,7 @@ cursor: pointer;
 .content .icon
 {
 position: absolute;
-top: 57%;
+top: 50%;
 left:50%;
 transform: translate(-50%, -50%); 
 }
@@ -192,60 +347,22 @@ line-height: 2rem;
 left: 10%;
 top: 7%; */
 }
-.box1
-{
+.box1, .box2 ,.box3, .box4, .box5, .box6, .box7, .box8
+{   
 gap: 40px;
 padding: 15px;
 border-radius: 0.9375rem;
 border: 3px  rgba(255, 255, 255, 0.29);   
 width: 80%;
 position: absolute;
-top: 45%;
+top: 55%;
 left:50%;
 transform: translate(-50%, -50%); 
 display: none;
 width: 43.75rem;
-
 flex-shrink: 0;
 }
-.box2
-{
 
-
-
-gap: 40px;
-padding: 15px;
-border-radius: 0.9375rem;
-border: 3px  rgba(255, 255, 255, 0.29);   
-width: 80%;
-position: absolute;
-top: 45%;
-left:50%;
-transform: translate(-50%, -50%); 
-display: none;
-width: 43.75rem;
-
-flex-shrink: 0;
-}
-.box3
-{
-
-
-
-gap: 40px;
-padding: 15px;
-border-radius: 0.9375rem;
-border: 3px  rgba(255, 255, 255, 0.29);   
-width: 80%;
-position: absolute;
-top: 45%;
-left:50%;
-transform: translate(-50%, -50%); 
-display: none;
-width: 43.75rem;
-
-flex-shrink: 0;
-}
 
 .content1
 {
@@ -271,7 +388,7 @@ letter-spacing: 0.1875rem;
     display: flex;
     justify-content: space-between;
 }
-#Home,#Home2,#Home3
+#Home,#Home2,#Home3,#Home4
 {
 width: 10.75rem;
 height: 3rem;
@@ -291,7 +408,7 @@ top:20%;
 left: 15%;
 }
 
-#Home:active,#Home2:active,#Home3:active
+#Home:active,#Home2:active,#Home3:active,#Home4:active
 {
     color: #DB2E4D;
 font-family: Barlow Semi Condensed;
@@ -316,19 +433,13 @@ font-weight: 700;
 line-height: normal;
 }
 
-.logo3
+.logo3 ,.logo2 ,.logo1
 {
     display: none;
 
 }
-.logo2
-{
-display: none; 
-}
-.logo1
-{
-display: none;
-}
+
+
 
 .Mychoice
 {
@@ -361,17 +472,40 @@ background: #FFF; */
     opacity: 0.05;
     background: #FFF;
     position: absolute;
-    left: 64.3%;
+    left: 63.3%;
     z-index: -1;
     top: 20%; 
     display: none; 
       
 }
-
-
-
-@media screen and (max-width:1280px)
+.box4 #Aichoice1, .box5 #Aichoice2, .box5 #Aichoice3, .box5 #Aichoice4
 {
+width: 13.375rem;
+height: 13.125rem;
+flex-shrink: 0; 
+}
+.mid{
+    position: relative;
+    right: 2.5%;  
+}
+
+
+
+/* @media screen and (max-width:1280px)
+{
+.popup
+{
+
+background: #0000006b; 
+width: 100%;
+height: 100%;
+flex-shrink: 0; 
+position: absolute;
+display: none; 
+justify-content: center;
+position: relative;
+top: -6%;
+}
 header{
 position: absolute;
 top: 17%;
@@ -414,16 +548,16 @@ position: absolute;
 top: 67%;
 left:50%;
 transform: translate(-50%, -50%); 
-}
-#hand
+} 
+ #hand
 {
 position: relative;
-/* top: 0%; */
-left:2%;  
-/* height: 20px;  */
-}
 
-.box1
+left:2%;  
+
+} 
+
+ .box1
 {
 gap: 40px;
 padding: 15px;
@@ -473,25 +607,113 @@ flex-shrink: 0;
 {
  position: relative;
  right: 2.0%;   
-}
-
 } 
-@media  (hover:none){
- button#rock:hover{
-    background-color: initial;
- }
-    
- 
-}
+
+} */
 
 
 @media  screen and (max-width:890px)
 {
-    
-    body
+
+/* body
     {
-overflow: hidden;
+overflow: hidden;2
+    } */
+#rock1{
+position: absolute; 
+top: 43.5rem;
+left: 63%;   
+ transform: translate(-50%, -50%);   
+flex-shrink: 0;
+}
+
+#lizard 
+{
+position: relative;
+top: 43.5rem;
+left: 9rem;
+transform: translate(-50%, -50%);   
+}
+#lizard .Lizard
+{
+width: 8.0625rem;
+height: 8.25rem;   
+}
+#cross
+{
+position: absolute;
+top: 33.5rem;
+left: 15.5rem;   
+}
+
+ #hand3 
+{
+position: absolute;
+top: 33.5rem;
+left: 33rem;
+flex-shrink: 0;
+} 
+/* #hand3 .Logo2{
+width: 8.0625rem;
+height: 8.25rem;
+} */
+#hand4 
+{
+flex-shrink: 0; 
+position: relative;
+top: 17.5rem;
+left: 24.5rem; 
+}
+#myRules1
+{
+
+position: relative;
+top:70%;
+left: -10%; 
+transition: 0.4s;  
+}
+
+    .logo
+    {
+    width: 8.375rem;
+    height: 6.125rem;
     }
+    #Score_board{
+        border:1px solid;
+        width: 6.375rem;
+        height: 6.125rem;
+        flex-shrink: 0;
+        border-radius: 0.5rem;
+        background: linear-gradient(0deg, #F3F3F3 0%, #FFF 100%);
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
+        text-align: center;
+        
+        }
+        #num
+        {
+            position: relative;
+            top: -25%;
+        }
+    
+header{
+    position: absolute;
+    top: 17%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+} 
+
+.container1{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #FFFFFF4A;
+    gap: 200px;
+    padding: 15px;
+    border-radius: 0.9375rem;
+    border: 3px solid rgba(255, 255, 255, 0.29);
+    width: 100%;
+   
+}
     .tri{
         position: absolute;
         top: 57%;
@@ -513,28 +735,14 @@ overflow: hidden;
     top: 55%;  
     }
 
-    /* #hand .logo2
-    {
-    display: none;  
-    } */
 
-    /* #tag button:hover
-    {
-   
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    } */
 
 
 }
 
 @media screen and (max-width:500px)
 {
-     /*body
-    {
-overflow: hidden;
-    } */
+
     button:hover{
         background-color: initial;
     }
@@ -567,7 +775,7 @@ line-height: 2.5rem; /* 100% */
 header{
 position: absolute;
 top: 13%;
-left:35%;
+left:50%;
 transform: translate(-50%, -50%); 
 }
 .container1{
@@ -653,7 +861,7 @@ gap: 90px;
 #myRules
 {
 position: absolute;
-top: 93%;
+top: 96%;
 left:50%;
 transform: translate(-50%, -50%); 
 }
@@ -787,18 +995,22 @@ flex-shrink: 0;
      
 }
 
+#Bonus
+{
+     position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);        
+}
 }
 
 @media screen and (width:414px)
 {
-     body
-    {
-overflow: hidden;
-    }  
+
 header{
 position: absolute;
 top: 13%;
-left:37%;
+left:50%;
 transform: translate(-50%, -50%); 
 }
     
@@ -808,7 +1020,7 @@ transform: translate(-50%, -50%);
 header{
 position: absolute;
 top: 13%;
-left:37%;
+left:50%;
 transform: translate(-50%, -50%); 
 }
 }
