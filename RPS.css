@@ -867,10 +867,11 @@ width: 8.125rem;
 height: 8.3125rem;
 flex-shrink: 0;
 top: 64%;
+
 }
 #rock{
     position: absolute; 
-    top: 67.5%;
+    top: 62.5%;
     left: 50%;   
     transform: translate(-50%, -50%);
     }

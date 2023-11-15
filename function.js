@@ -69,7 +69,7 @@ hAnd.addEventListener('click', () => {
     document.querySelector(".box1").style.display = "block";
     document.getElementById("tag").style.display = "none";
     document.getElementById("Bonus").style.display="none"
-    document.querySelector("#myRules").style.left="50%";
+    document.querySelector("#myRules").style.left="10rem";
 
     const Aichoice = document.getElementById("Aichoice1");
     let Hand = Math.ceil(Math.random()*3);
