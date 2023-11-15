@@ -3,6 +3,7 @@ const myRules = document.querySelector("#myRules");
 const xBtn = document.querySelector(".close");
 const Popup = document.querySelector(".popup");
 
+
 const Playagain = document.getElementById("Home");
 const Playagain2 = document.getElementById("Home2");
 const Playagain3 = document.getElementById("Home3");
@@ -33,31 +34,42 @@ const win = document.getElementById("num");
 /* Event Listeners */
 myRules.addEventListener('click', function() {
     Popup.style.display ="flex";
+  
 });
 
 xBtn.addEventListener("click", function() {
     Popup.style.display = "none";
+   
 });
 
 Playagain.addEventListener("click", function() {
     document.querySelector(".box1").style.display = "none";
     document.getElementById("tag").style.display = "block";
+    document.getElementById("Bonus").style.display = "block";
+    document.querySelector("#myRules").style.left="90%";
+
 });
 
 Playagain2.addEventListener("click", function() {
     document.querySelector(".box2").style.display = "none";
     document.getElementById("tag").style.display = "block";
+    document.getElementById("Bonus").style.display = "block";
+    document.querySelector("#myRules").style.left="90%";
 });
 
 Playagain3.addEventListener("click", function() {
     document.querySelector(".box3").style.display = "none";
     document.getElementById("tag").style.display = "block";
+    document.getElementById("Bonus").style.display = "block";
+    document.querySelector("#myRules").style.left="90%";
 });
 
 
 hAnd.addEventListener('click', () => {
     document.querySelector(".box1").style.display = "block";
     document.getElementById("tag").style.display = "none";
+    document.getElementById("Bonus").style.display="none"
+    document.querySelector("#myRules").style.left="50%";
 
     const Aichoice = document.getElementById("Aichoice1");
     let Hand = Math.ceil(Math.random()*3);
@@ -97,6 +109,8 @@ hAnd.addEventListener('click', () => {
 hAnd2.addEventListener('click', () => {
     document.querySelector(".box2").style.display = "block";
     document.getElementById("tag").style.display = "none";
+    document.getElementById("Bonus").style.display="none"
+    document.querySelector("#myRules").style.left="50%";
 
     const Aichoice = document.getElementById("Aichoice2");
     let Hand2 = Math.ceil(Math.random()*3);
@@ -136,6 +150,8 @@ hAnd2.addEventListener('click', () => {
 rOck.addEventListener('click', () => {
     document.querySelector(".box3").style.display = "block";
     document.getElementById("tag").style.display = "none";
+    document.getElementById("Bonus").style.display="none";
+    document.querySelector("#myRules").style.left="50%";
 
     const Aichoice = document.getElementById("Aichoice3");
     let rOck = Math.ceil(Math.random()*3);
