@@ -33,7 +33,9 @@ header{
     border-radius: 0.9375rem;
     border: 3px solid rgba(255, 255, 255, 0.29);
 }
-
+a{
+    text-decoration: none;
+}
 #Score_board{
 border:1px solid;
 width: 9.375rem;
@@ -990,7 +992,7 @@ width: 80%;
 {
 position: relative;  
 top: 0%; 
-left:5%;    
+left:10%;    
 }
 #Home,#Home2,#Home3,#Home4,#Home5
 {
@@ -998,7 +1000,7 @@ width: 13.75rem;
 height: 3rem;
 flex-shrink: 0;
 position: relative;
-left: 20%;
+left: 25%;
 }
 .content1 p
 {
