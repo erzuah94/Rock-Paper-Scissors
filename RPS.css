@@ -177,6 +177,13 @@ width: 11.375rem;
 height: 11.6875rem;
 flex-shrink: 0;
 }
+.box7 #Mychoice, .box8 #Mychoice
+{
+    width: 13.375rem;
+    height: 13.6875rem;
+    flex-shrink: 0;
+    flex-shrink: 0;
+}
 #rock1{
 position: absolute; 
 top: 80%;
@@ -197,7 +204,7 @@ height: 8.25rem;
     transform: translate(-50%, -50%); 
     gap: 40px;
 }
-#Bonus
+#Bonus,#OR
 {
     width: 9rem;
     height: 2.5rem;
@@ -226,6 +233,21 @@ height: 8.25rem;
     position: relative;
     top: 85%;
 }
+.but1
+{
+display: flex;
+justify-content: space-between; 
+margin-left: 20px;
+margin-right: 50px;
+position: relative;
+top: 80%;
+
+}
+.OR
+{
+position: relative;
+top: 47%;   
+}
 
 #myRules{
     /* float: right; */
@@ -246,8 +268,6 @@ height: 8.25rem;
     top:80%;
     left: -10%; 
     transition: 0.4s;
-
-
     float: right; 
 
 }
@@ -273,6 +293,12 @@ left: -10%;
 transition: 0.4s;  
 }
 
+#OR:hover
+{
+color: #3B4262; 
+background: #fff;  
+}
+
 #myRules:hover{
     color: #3B4262; 
     background: #fff;
@@ -288,7 +314,7 @@ background: #fff;
     color: #3B4262; 
     background: #fff;   
 }
-.popup,.popup1
+.popup
 {
 /* opacity: 0.5; */
 background: #0000006b; 
@@ -993,6 +1019,7 @@ width: 80%;
 position: relative;  
 top: 0%; 
 left:10%;    
+
 }
 #Home,#Home2,#Home3,#Home4,#Home5
 {
@@ -1001,6 +1028,7 @@ height: 3rem;
 flex-shrink: 0;
 position: relative;
 left: 25%;
+
 }
 .content1 p
 {
@@ -1127,6 +1155,36 @@ flex-shrink: 0;
 {
 width: 9rem;
 }
+}
+.content
+{
+width: 100%;
+height: 100vh;
+flex-shrink: 0;
+border-radius: 0px 0px 5px 5px ;
+background: #FFF;
+box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
+position: relative;
+top: 0%; 
+}
+.icon
+{
+margin-top: -60px;
+flex-shrink: 0;
+}
+.b1 p
+{
+  margin: auto; 
+  position: relative; 
+  margin-top: 10%;
+}
+.close
+{
+
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%, -50%); 
 }
 }
 
@@ -1282,8 +1340,6 @@ background: #FFF;
 box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
 position: relative;
 top: 0%; 
-
-
 }
 .icon
 {
